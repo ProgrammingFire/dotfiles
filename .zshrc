@@ -18,6 +18,7 @@ zsh-syntax-highlighting
 zsh-autosuggestions
 npm
 github
+vi-mode
 )
 
 # COMMANDS TO RUN ON START
