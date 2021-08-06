@@ -1,0 +1,1 @@
+/home/fire/.SpaceVim
