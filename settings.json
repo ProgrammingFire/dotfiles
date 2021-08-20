@@ -1,0 +1,182 @@
+{
+  "terminal.integrated.fontFamily": "DejaVuSansMono Nerd Font",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "terminal.explorerKind": "external",
+  "gitlens.defaultDateFormat": null,
+  "files.autoSaveDelay": 300,
+  "[html]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.pythonPath": "C:\\Python39\\python.exe",
+  "editor.fontFamily": "SF Mono Medium",
+  "editor.fontWeight": "340",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 20,
+  "terminal.integrated.fontSize": 18,
+  "editor.wordWrap": "off",
+  "aws.profile": "profile:default",
+  "remote.SSH.remotePlatform": {
+    "aws-ec2": "linux"
+  },
+  // Vim Config
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["whichkey.show"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["whichkey.show"]
+    }
+  ],
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 4,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "editor.formatOnSave": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Cygwin": {
+      "path": "C:\\cygwin64\\bin\\bash.exe",
+      "args": ["--login"]
+    }
+  },
+  "screencastMode.fontSize": 40,
+  "screencastMode.keyboardOverlayTimeout": 500,
+  "screencastMode.verticalOffset": 1,
+  "[python]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "window.title": "${dirty}${activeEditorShort}",
+  "editor.mouseWheelZoom": true,
+  "screencastMode.onlyKeyboardShortcuts": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false
+  },
+  "python.defaultInterpreterPath": "C:\\Python39\\python.exe",
+  "screencastMode.mouseIndicatorColor": "#fffb00",
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/*.html": "django-html",
+    "**/src/*.js": "javascriptreact",
+    "**/src/**/*.js": "javascriptreact"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/dist/css"
+    }
+  ],
+  "workbench.colorCustomizations": {
+    "[Palenight (Mild Contrast)]": {
+      "editorCursor.background": "#b4ec59"
+    },
+    "[Gruvbox Dark Hard]": {
+      "editor.selectionBackground": "#504945b0",
+      "editor.selectionHighlightBackground": "#50494558"
+    },
+    "[Gruvbox Dark Medium]": {
+      "editor.selectionBackground": "#504945b0",
+      "editor.selectionHighlightBackground": "#50494558"
+    },
+    "[Gruvbox Dark Soft]": {
+      "editor.selectionBackground": "#504945b0",
+      "editor.selectionHighlightBackground": "#50494558"
+    }
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.cursorBlinking": "solid",
+  "editor.lineNumbers": "relative",
+  "editor.codeLensFontFamily": "SF Mono Medium",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "One Dark italic",
+        "scope": [
+          "comment",
+          "entity.other.attribute-name",
+          "keyword",
+          "markup.underline.link",
+          "storage.modifier",
+          "storage.type",
+          "string.url",
+          "variable.language.super",
+          "variable.language.this"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "One Dark italic reset",
+        "scope": [
+          "keyword.operator",
+          "keyword.other.type",
+          "storage.modifier.import",
+          "storage.modifier.package",
+          "storage.type.built-in",
+          "storage.type.function.arrow",
+          "storage.type.generic",
+          "storage.type.java",
+          "storage.type.primitive"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "window.zoomLevel": 1
+}
