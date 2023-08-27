@@ -1,6 +1,5 @@
     "wlr/workspaces": {
       // "format": "{icon} {name}",
-      "format": "{icon}",
       "disable-scroll": true,
       "all-outputs": true,
       "on-click": "activate",

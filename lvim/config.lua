@@ -9,6 +9,7 @@ lvim.plugins = {
     "catppuccin/nvim",
     name = "catppuccin"
   },
+  { "joshdick/onedark.vim" },
   {
     "ellisonleao/gruvbox.nvim",
     name = "gruvbox"
@@ -63,12 +64,7 @@ require("gruvbox").setup({
 require("catppuccin").setup({
   transparent_background = true,
   no_italic = false,
-  styles = {
-    comments = { "italic" },
-    conditionals = { "bold" },
-    loops = { "bold" },
-    keywords = { "bold" },
-  },
+  no_bold = true,
 })
 
 lvim.autocommands = {
@@ -80,9 +76,10 @@ lvim.autocommands = {
         -- change `Normal` to the group you want to change
         -- and `#ffffff` to the color you want
         -- see `:h nvim_set_hl` for more options
-        -- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#11111b", underline = false, bold = true })
-        -- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#2a2f30", underline = false, bold = true })
-        vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1e1e2e", underline = false, bold = true })
+        -- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#11111b", underline = false, bold = false })
+        -- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#2a2f30", underline = false, bold = false })
+        -- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1a1c21", underline = false, bold = false })
+        vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1e1e2e", underline = false, bold = false })
       end,
     },
   },
@@ -93,11 +90,14 @@ lvim.builtin.telescope.defaults.path_display = nil
 lvim.builtin.telescope.defaults.file_ignore_patterns = {
   "node_modules"
 }
-lvim.lsp.automatic_servers_installation = false
-lvim.lsp.automatic_configuration.skipped_servers = { "tailwindcss-language-server" }
+lvim.lsp.installer.setup.automatic_installation = false
+-- lvim.lsp.automatic_configuration.skipped_servers = { "tailwindcss-language-server" }
 -- vim.opt.showtabline = 0
--- lvim.colorscheme = "gruvbox"
+vim.opt.relativenumber = true
+
 -- require("gruvbox").setup({
 --   transparent_background = true,
 -- })
+-- lvim.colorscheme = "gruvbox"
 lvim.colorscheme = "catppuccin-mocha"
+-- lvim.colorscheme = "onedark"

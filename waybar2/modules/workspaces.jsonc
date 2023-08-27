@@ -1,11 +1,17 @@
     "wlr/workspaces": {
-      // "format": "{icon} {name}",
+      "format": "{icon}",
       "disable-scroll": true,
       "all-outputs": true,
       "on-click": "activate",
       "format-icons": {
-        "active": "",
-        "default": ""
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": "",
       },
       "persistent_workspaces": {
         "1": [],

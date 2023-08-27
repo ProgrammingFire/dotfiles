@@ -31,26 +31,22 @@ tooltip {
     border-radius: 8px;
     margin-top: 2px;
     margin-bottom: 2px;
-
-    padding-left: 7px;
-    padding-right: 7px;
-    /* padding-left: 2px; */
-    /* padding-right: 2px; */
+    padding-left: 2px;
+    padding-right: 2px;
     color: @wb-color;
-    /* animation: gradient_f 20s ease-in infinite; */
-    /* transition: all 0.3s cubic-bezier(.30,0.30,.30,.30); */
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.30,0.30,.30,.30);
 }
 
 #workspaces button.active {
     background: @wb-act-bg;
     color: @wb-act-color;
-  font-weight: bold;
-    /* margin-left: 2px; */
-    /* padding-left: 11px; */
-    /* padding-right: 11px; */
-    /* margin-right: 2px; */
-    /* animation: gradient_f 20s ease-in infinite; */
-    /* transition: all 0.3s cubic-bezier(.30,0.30,.30,.30); */
+    margin-left: 2px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-right: 2px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.30,0.30,.30,.30);
 }
 
 #workspaces button:hover {

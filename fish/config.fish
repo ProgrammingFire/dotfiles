@@ -4,15 +4,18 @@ end
 
 set -g fish_greeting
 
+export EDITOR="lvim"
+export PATH="$PATH:$HOME/.config/emacs/bin"
 
 alias vim="lvim"
 alias vi="lvim"
 alias v="lvim"
-alias t="tmux-sessionizer"
+alias t="tmux"
+
+alias typr="tt -highlight1 -t 30 -notheme"
 
 alias wbarreload="killall waybar && waybar -s ~/.config/waybar/style.css -c ~/.config/waybar/config.jsonc &"
 
-alias neofetch="neofetch --kitty"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias  l='exa -l  --icons'
 alias  c='clear'
@@ -37,13 +40,10 @@ alias vc='code'  # gui code editor
 
 set -U fish_user_paths $HOME/.local/bin
 
-# if $TERM="xterm-kitty"; COMMANDS_TRUE ...;
-# end
-
-if echo $TERM > /dev/null == "xterm-kitty"
+if test "$TERM" = "xterm-kitty"
   neofetch --kitty
-else 
-
+else
+  neofetch
 end
 
 # starship init fish | source

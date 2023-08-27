@@ -31,22 +31,14 @@ tooltip {
     border-radius: ${w_radius}px;
     margin-top: ${w_margin}px;
     margin-bottom: ${w_margin}px;
-    padding-left: ${w_paddin}px;
-    padding-right: ${w_paddin}px;
+    padding-left: 7px;
+    padding-right: 7px;
     color: @wb-color;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.30,0.30,.30,.30);
 }
 
 #workspaces button.active {
     background: @wb-act-bg;
     color: @wb-act-color;
-    margin-left: ${w_margin}px;
-    padding-left: ${w_padact}px;
-    padding-right: ${w_padact}px;
-    margin-right: ${w_margin}px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.30,0.30,.30,.30);
 }
 
 #workspaces button:hover {
@@ -68,19 +60,11 @@ tooltip {
     padding-left: ${w_paddin}px;
     padding-right: ${w_paddin}px;
     color: @wb-color;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #taskbar button.active {
     background: @wb-act-bg;
     color: @wb-act-color;
-    margin-left: ${w_margin}px;
-    padding-left: ${w_padact}px;
-    padding-right: ${w_padact}px;
-    margin-right: ${w_margin}px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,0.55,.55,.55);
 }
 
 #taskbar button:hover {

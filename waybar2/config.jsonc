@@ -4,7 +4,7 @@
 // sourced from header module //
 
     "layer": "top",
-    "position": "bottom",
+    "position": "top",
     "mod": "dock",
     "height": 28,
     "exclusive": true,
@@ -14,13 +14,55 @@
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/padd","custom/l_end","cpu","memory","battery","custom/r_end","custom/l_end","clock","custom/r_end","custom/padd"],
-	"modules-center": ["custom/padd","custom/l_end","wlr/workspaces","hyprland/window","custom/r_end","custom/padd"],
+	"modules-left": ["custom/padd","custom/l_end","wlr/workspaces","hyprland/window","custom/r_end","custom/padd"],
+	"modules-center": ["custom/padd","custom/l_end","cpu","memory","battery","custom/r_end","custom/l_end","clock","custom/r_end","custom/padd"],
 	"modules-right": ["custom/padd","custom/l_end","network","bluetooth","pulseaudio","pulseaudio#microphone","custom/updates","custom/r_end","custom/l_end","tray","custom/r_end","custom/l_end","custom/wallchange","custom/mode","custom/wbar","custom/cliphist","custom/power","custom/r_end","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
 
+    "wlr/workspaces": {
+      "format": "{icon}",
+      "disable-scroll": true,
+      "all-outputs": true,
+      "on-click": "activate",
+      "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": "",
+      },
+      "persistent_workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": []
+      }
+    },
+    "hyprland/window": {
+      "format": "  {}",
+      "separate-outputs": true,
+      "rewrite": {
+        "nouman@archcraft:(.*)": "$1 Alacritty",
+        "(.*) — Mozilla Firefox": "$1 󰈹",
+        "(.*)Mozilla Firefox": "Firefox 󰈹",
+        "(.*) - Visual Studio Code": "$1 󰨞",
+        "(.*)Visual Studio Code": "Code 󰨞",
+        "(.*) — Dolphin": "$1 󰉋",
+        "(.*)Spotify": "Spotify 󰓇",
+        "(.*)Steam": "Steam 󰓓"
+      }
+    },
     "cpu": {
         "interval": 10,
         "format": "󰍛 {usage}%",
@@ -56,42 +98,6 @@
         "tooltip-format": "<tt><big>{calendar}</big></tt>"
     },
 
-    "wlr/workspaces": {
-      // "format": "{icon} {name}",
-      "disable-scroll": true,
-      "all-outputs": true,
-      "on-click": "activate",
-      "format-icons": {
-        "active": "",
-        "default": ""
-      },
-      "persistent_workspaces": {
-        "1": [],
-        "2": [],
-        "3": [],
-        "4": [],
-        "5": [],
-        "6": [],
-        "7": [],
-        "8": [],
-        "9": [],
-        "10": []
-      }
-    },
-    "hyprland/window": {
-      "format": "  {}",
-      "separate-outputs": true,
-      "rewrite": {
-        "nouman@archcraft:(.*)": "$1 Alacritty",
-        "(.*) — Mozilla Firefox": "$1 󰈹",
-        "(.*)Mozilla Firefox": "Firefox 󰈹",
-        "(.*) - Visual Studio Code": "$1 󰨞",
-        "(.*)Visual Studio Code": "Code 󰨞",
-        "(.*) — Dolphin": "$1 󰉋",
-        "(.*)Spotify": "Spotify 󰓇",
-        "(.*)Steam": "Steam 󰓓"
-      }
-    },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "󰤨 {essid}",
@@ -160,8 +166,8 @@
     "custom/wallchange": {
         "format": "{}",
         "exec": "echo ; echo 󰆊 switch wallpaper",
-        "on-click": "~/.config/swww/swwwallpaper.sh -n 3",
-        "on-click-right": "~/.config/swww/swwwallpaper.sh -p 3",
+        "on-click": "~/.config/swww/swwwallpaper.sh -n 2",
+        "on-click-right": "~/.config/swww/swwwallpaper.sh -p 2",
         "interval" : 86400, // once every day
         "tooltip": true
     },
@@ -189,9 +195,9 @@
     "custom/cliphist": {
         "format": "{}",
         "exec": "echo ; echo 󰅇 clipboard history",
-        "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh c 3",
+        "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh c 2",
         //"on-click-right": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh d",
-        "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh w 3",
+        "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh w 2",
         "interval" : 86400, // once every day
         "tooltip": true
     },
