@@ -57,3 +57,18 @@ chsh $USER
 # and then type
 # /usr/bin/fish
 ```
+
+Install `tmux`:
+
+```bash
+sudo pacman -Sy tmux
+# Install tmux-plugin-manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Use my `tmux` config:
+```bash
+cp dotfiles/.tmux.conf ~/
+```
+
+Open `tmux` and press `Ctrl-Space` `I`
