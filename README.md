@@ -44,6 +44,8 @@ Install `lvim`:
 LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
 ```
 
+Which Shell to use? `fish` or `zsh`
+
 Install `fish`:
 ```bash
 sudo pacman -Sy fish
@@ -56,6 +58,23 @@ chsh $USER
 # Enter your password
 # and then type
 # /usr/bin/fish
+```
+
+Install `zsh`:
+```bash
+sudo pacman -Syy zsh
+
+# Install zap, a plugin manager for zsh
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
+```
+
+Set `zsh` as your default shell:
+```bash
+chsh $USER
+
+# Enter your password
+# and then type
+# /usr/bin/zsh
 ```
 
 Install `tmux`:
