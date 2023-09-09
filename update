@@ -10,3 +10,8 @@ cp -r ~/.config/neofetch/ ./
 cp -r ~/.config/swww/ ./
 cp -r ~/.config/waybar/ ./
 cp -r ~/.config/waybar.backup2/ ./waybar2
+
+git add .
+git commit
+git pull
+git push
