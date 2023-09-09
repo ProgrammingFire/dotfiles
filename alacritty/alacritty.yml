@@ -48,4 +48,4 @@ cursor:
 ## Live config reload
 live_config_reload: true
 # Shell
-shell: "/usr/bin/fish"
+shell: "/usr/bin/zsh"

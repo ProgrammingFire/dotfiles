@@ -1,16 +1,22 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
-set -g fish_greeting
+# Created by Zap installer
+[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+plug "zsh-users/zsh-autosuggestions"
+plug "zap-zsh/supercharge"
+plug "zap-zsh/zap-prompt"
+plug "zsh-users/zsh-syntax-highlighting"
+plug "hlissner/zsh-autopair"
 
 export EDITOR="lvim"
 export PATH="$PATH:$HOME/.config/emacs/bin"
+
+alias jfmt="jq -C | less -R"
 
 alias vim="lvim"
 alias vi="lvim"
 alias v="lvim"
 alias t="tmux"
+
+alias addui="npx shadcn-ui@latest add"
 
 alias typr="tt -highlight1 -t 30 -notheme"
 
@@ -21,7 +27,7 @@ alias  l='exa -l  --icons'
 alias  c='clear'
 alias cl="clear"
 alias cls="clear"
-alias ls='exa -1  --icons'
+alias ls='exa -l  --icons'
 alias ll='exa -la --icons'
 alias ld='exa -lD --icons'
 
@@ -40,12 +46,22 @@ alias pc='sudo pacman -Sc' # remove unused cache
 alias po='pacman -Qtdq | sudo pacman -Rns -' # remove unused packages, also try > pacman -Qqd | pacman -Rsu --print -
 alias vc='code'  # gui code editor
 
+# FZF CATPPUCCIN
+
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+
 set -U fish_user_paths $HOME/.local/bin
 
-if test "$TERM" = "xterm-kitty"
+if [[ "$TERM" = "xterm-kitty" ]]; then
   neofetch --kitty
-else if test "$TERM" = "xterm-256color"
+else
   neofetch
-end
+fi
 
-# starship init fish | source
+
+# Load and initialise completion system
+autoload -Uz compinit
+compinit

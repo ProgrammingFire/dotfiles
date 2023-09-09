@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+cp -r ~/.config/alacritty/ ./
+cp -r ~/.config/fish/ ./
+cp -r ~/.zshrc ./
+cp -r ~/.config/hypr/ ./
+cp -r ~/.config/kitty/ ./
+cp -r ~/.config/lvim/ ./
+cp -r ~/.config/neofetch/ ./
+cp -r ~/.config/swww/ ./
+cp -r ~/.config/waybar/ ./
+cp -r ~/.config/waybar.backup2/ ./waybar2

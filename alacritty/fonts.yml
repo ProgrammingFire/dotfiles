@@ -10,25 +10,25 @@ font:
   # Bold font face
   # bold:
   #   family: "JetBrainsMono Nerd Font"
-    #style: Bold
+  #style: Bold
 
   # Italic font face
   # italic:
   #   family: "JetBrainsMono Nerd Font"
-    #style: Italic
+  #style: Italic
 
   # Bold italic font face
   # bold_italic:
   #   family: "JetBrainsMono Nerd Font"
-    #style: Bold Italic
+  #style: Bold Italic
 
   # Point size
   size: 13
 
   # Offset
   offset:
-  #  x: 0
-   y: 0
+    x: 0
+    y: 0
 
   # Glyph offset
   #glyph_offset:

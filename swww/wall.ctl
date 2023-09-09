@@ -1,4 +1,4 @@
-1|Catppuccin-Mocha|~/.config/swww/Catppuccin-Mocha/rain_world2.png
+1|Catppuccin-Mocha|~/.config/swww/Catppuccin-Mocha/bridge.png
 0|One-Dark|~/.config/swww/One-Dark/autumn.jpg
 0|Gruvbox-Dark|~/.config/swww/Gruvbox-Dark.png
 0|Catppuccin-Latte|~/.config/swww/Catppuccin-Latte/jormungandr.jpg
